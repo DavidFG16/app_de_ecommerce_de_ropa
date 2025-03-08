@@ -131,17 +131,115 @@ nav ul{
 }
 
 nav ul li{
+    display: flex;
     flex: 1;
     flex-grow: 1;
     height: 34px;
-    min-width: 30%;
+    min-width: 26%;
     list-style: none;
     border-radius: 8px;
     color: var(--color-4);
     border: 1px solid var(--color-4);
     align-items: center;
     justify-content: center;
+    position: relative;
+    gap: 4px;
 
+}
+
+nav ul .all_items:before{
+    content: url(../storage/img/category_black.png);
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+
+nav ul .dress:before{
+    content: url(../storage/img/dress.png);
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+
+nav ul .tshirt:before{
+    content: url(../storage/img/tshirt.png);
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+
+nav ul .jeans:before{
+    content: url(../storage/img/jeans.png);
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+
+/* all items */
+nav ul .all_items:active{
+    background-color: var(--color-5);
+}
+
+nav ul .all_items:active::before{
+    border: 1px solid var(--color-4);
+    content: url(../storage/img/category.png);
+    border: none
+}
+
+nav ul .all_items a:active{
+    color: var(--color-4);
+}
+/* all items */
+nav ul .dress:active{
+    background-color: var(--color-5);
+}
+
+nav ul .dress:active::before{
+    /* background-color: white; */
+    border: 1px solid var(--color-4);
+    content: url(../storage/img/dress_white.png); 
+    border: none;
+}
+
+nav ul .dress a:active{
+    color: var(--color-4);
+}
+/* all items */
+nav ul .tshirt:active{
+    background-color: var(--color-5);
+}
+
+nav ul .tshirt:active::before{
+    /* background-color: white; */
+    border: 1px solid var(--color-4);
+    content: url(../storage/img/tshirt_white.png); 
+    border: none;
+}
+
+nav ul .tshirt a:active{
+    color: var(--color-4);
+}
+/* all items */
+nav ul .jeans:active{
+    background-color: var(--color-5);
+}
+
+nav ul .jeans:active::before{
+    /* background-color: white; */
+    border: 1px solid var(--color-4);
+    content: url(../storage/img/jeans_white.png); 
+    border: none;
+}
+
+nav ul .jeans a:active{
+    color: var(--color-4);
 }
 
 nav ul li a{
@@ -150,5 +248,5 @@ nav ul li a{
     color: var(--color-5);
     font-size: 12px;
     line-height: 150%;
-    padding-left: 32px;
 }
+
