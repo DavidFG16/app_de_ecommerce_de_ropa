@@ -260,6 +260,7 @@ main{
     grid-template-areas: "izq der";
     gap: 17px;
     margin-top: 24px;
+    width: 100%;
 }
 
 
@@ -267,14 +268,12 @@ main .prendas_izq{
     grid-area: izq;
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 
 main .prendas_der{
     grid-area: der;
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 
 
@@ -284,6 +283,7 @@ main .prendas_der{
     width: 100%;
     /* height: 298px; */
     position: relative;
+    padding-bottom: 24px;
 }
 
 .contenedor_prenda .heart{
@@ -363,4 +363,60 @@ main .prendas_der{
     height: 251px;
     border-radius: 16px;
     object-fit: cover;
+}
+ footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 24px; 
+    height: 60px;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background-color: var(--color-5);
+    gap: 45px;
+    border-radius: 44px;
+    padding: 18px;
+}
+
+footer div a {
+    /* padding: 7px 7px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+footer div a img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+footer div a::before {
+    content: " ";
+    border-radius: 100%;
+    background-color: var(--color-8);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+
+.blur {
+    grid-area: footer;
+    width: 100%;
+    height: 66px;
+    bottom: 51px;
+    filter: blur(35px);
+    position: sticky;
+    background-color: var(--color-9);
 }
