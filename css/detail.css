@@ -48,3 +48,111 @@ header > img{
     border-radius: 16px;
 }
 
+main{
+    display: flex;
+    grid-area: main;
+    flex-direction: column;
+    padding: 24px 0 16px 0;
+    gap: 16px;
+}
+
+main .features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 37px; */
+}
+
+main .features .rating{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+main .features .rating h1{
+    font-family: "EncodeSans-SemiBold";
+    font-size: 24px;
+    line-height: 130%;
+    color:var(--color-2) ;
+}
+
+main .features .rating div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+main .features .rating div img{
+    object-fit: cover;
+    margin-right: 4px;
+
+}
+
+main .features .rating div p:nth-child(2){
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 120%;
+    color:var(--color-1) ;
+}
+
+main .features .rating div p:nth-child(3){
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 120%;
+    color:var(--color-11) ;
+}
+
+main .features .counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .features .counter .minus, 
+main .features .counter .plus{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px solid var(--color-4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+main .features .counter .minus::before{
+    position: absolute;
+    content: url(../storage/img/minus.png);
+    align-self: center;
+    width: 16px;
+    height: 16px;
+}
+
+main .features .counter .plus::before{
+    position: absolute;
+    content: url(../storage/img/add.png);
+    align-self: center;
+    width: 16px;
+    height: 16px;
+}
+
+main .features .counter input{
+    width: 31px;
+    outline: none;
+    text-align: center;
+    font-family: "EncodeSans-Bold";
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-5);
+    border: none;
+}
+
+main .features .counter input::-webkit-outer-spin-button,
+main .features .counter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+
+
