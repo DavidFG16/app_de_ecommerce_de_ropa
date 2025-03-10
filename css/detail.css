@@ -52,7 +52,7 @@ main{
     display: flex;
     grid-area: main;
     flex-direction: column;
-    padding: 24px 0 16px 0;
+    padding-top: 24px;
     gap: 16px;
 }
 
@@ -150,6 +150,38 @@ main .features .counter input{
 main .features .counter input::-webkit-outer-spin-button,
 main .features .counter input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+main .description{
+    width: 256px;
+}
+
+main .description details {
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 150%;
+    color:var(--color-1) ;
+}
+
+details>summary {
+    list-style: none;
+  }
+  summary::after {
+    content: ' Read more. . .';
+    color: var(--color-2);
+    font-family: "EncodeSans-SemiBold";
+    font-size: 14px;
+  }
+  details[open] summary:after {
+    content: " ";
+  }
+
+hr{
+    margin:16px 0 16px 0;
+    background-color: var(--color-15);
+    width: 100%;
+    border: none;
+    height: 1px;
 }
 
 
