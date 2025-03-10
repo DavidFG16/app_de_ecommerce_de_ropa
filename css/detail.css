@@ -184,6 +184,71 @@ hr{
     height: 1px;
 }
 
+.color_size{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color_size div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+
+.color_size div p{
+    font-family: "EncodeSans-Bold";
+    font-size: 12px;
+    color: var(--color-2);
+}
+
+.color_size div ul{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    list-style: none;
+
+}
+
+.color_size div ul li{
+    display: flex;
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    color: var(--color-5);
+    line-height: 150%;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    border: 1px solid var(--color-4);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.color_size .size ul li:active{
+    background-color: var(--color-5);
+    color:var(--color-6) ;
+}
+
+.color_size .color ul li:nth-child(1){
+    background-color: #000000;
+}
+
+.color_size .color ul li:nth-child(2){
+    background-color: #ffffff;
+}
+
+.color_size .color ul li:nth-child(3){
+    background-color: #ff0000;
+}
+
+.color_size .color ul li:active{
+    border: 2px solid #00d9ff;
+}
 
 
 
