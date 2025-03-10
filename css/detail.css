@@ -7,9 +7,10 @@
 
 body{
     display: grid;
-    padding: 24px;
+    padding: 24px 24px 0 24px;
     grid-template-areas: "header"
                           "main"
+                          "hr"
                           "selectors"
                           "footer";
 
@@ -182,9 +183,11 @@ hr{
     width: 100%;
     border: none;
     height: 1px;
+    grid-area: hr;
 }
 
 .color_size{
+    grid-area: selectors;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -250,6 +253,46 @@ hr{
     border: 2px solid #00d9ff;
 }
 
+footer{
+    margin-top:24px ;
+    grid-area: footer;
+    padding: 18px 16px;
+    background-color: var(--color-5);
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 24px;
+}
 
+footer a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4px;
+    text-decoration: none;
+}
+
+footer a img{
+    object-fit: cover;
+    margin-right: 4px;
+}
+
+footer a p{
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-6);
+}
+
+footer a del{
+    font-family: "EncodeSans-Regular";
+    font-size: 10px;
+    line-height: 140%;
+    color: var(--color-6);
+}
 
 
