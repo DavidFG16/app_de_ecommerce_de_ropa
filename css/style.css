@@ -313,6 +313,10 @@ main .prendas_der{
 
 }
 
+.contenedor_prenda .product_info a{
+    text-decoration: none;
+}
+
 
 .contenedor_prenda .product_info p:nth-child(1){
     font-family: "EncodeSans-SemiBold";
