@@ -4,3 +4,42 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: grid;
+    padding: 24px;
+    grid-template-areas: "header" 
+                         "main" 
+                         "footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+header a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-4);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+header a img{
+    object-fit: cover;
+}
+
+header p{
+    font-family: "EncodeSans-SemiBold";
+    color: var(--color-2);
+    font-size: 16px;
+    line-height: 140%;
+}
+
+
+
