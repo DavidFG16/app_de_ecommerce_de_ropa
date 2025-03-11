@@ -232,3 +232,33 @@ article > img{
     font-family: "EncodeSans-Regular";
 }
 
+.prices{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.prices div, .subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices div p:first-child, .subtotal p:first-child{
+    font-family: "EncodeSans-Regular";
+    font-size: 14px;
+    color: #171516;
+}
+
+.prices div p:last-child, .subtotal p:last-child{
+    font-family: "EncodeSans-SemiBold";
+    font-size: 14px;
+    color: #171516;
+}
+
+.subtotal{
+    margin-top: 8px;
+}
+
+
+
