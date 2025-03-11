@@ -4,3 +4,295 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: grid;
+    padding: 24px 24px 0 24px;
+    grid-template-areas: "header"
+                          "main"
+                          "hr"
+                          "selectors"
+                          "footer";
+
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 16px;
+    padding: 0 16px;
+
+}
+
+header div img{
+    padding: 8px;
+    background-color: var(--color-6);
+    border-radius: 100% ;
+    box-shadow: 0 4px 12px var(--color-13);
+    object-fit: cover;
+}
+
+header > img{
+    width: 100%;
+    height: 392px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+main{
+    display: flex;
+    grid-area: main;
+    flex-direction: column;
+    padding-top: 24px;
+    gap: 16px;
+}
+
+main .features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 37px; */
+}
+
+main .features .rating{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+main .features .rating h1{
+    font-family: "EncodeSans-SemiBold";
+    font-size: 24px;
+    line-height: 130%;
+    color:var(--color-2) ;
+}
+
+main .features .rating div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+main .features .rating div img{
+    object-fit: cover;
+    margin-right: 4px;
+
+}
+
+main .features .rating div p:nth-child(2){
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 120%;
+    color:var(--color-1) ;
+}
+
+main .features .rating div p:nth-child(3){
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 120%;
+    color:var(--color-11) ;
+}
+
+main .features .counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .features .counter .minus, 
+main .features .counter .plus{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px solid var(--color-4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+main .features .counter .minus::before{
+    position: absolute;
+    content: url(../storage/img/minus.png);
+    align-self: center;
+    width: 16px;
+    height: 16px;
+}
+
+main .features .counter .plus::before{
+    position: absolute;
+    content: url(../storage/img/add.png);
+    align-self: center;
+    width: 16px;
+    height: 16px;
+}
+
+main .features .counter input{
+    width: 31px;
+    outline: none;
+    text-align: center;
+    font-family: "EncodeSans-Bold";
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-5);
+    border: none;
+}
+
+main .features .counter input::-webkit-outer-spin-button,
+main .features .counter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+main .description{
+    width: 256px;
+}
+
+main .description details {
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    line-height: 150%;
+    color:var(--color-1) ;
+}
+
+details>summary {
+    list-style: none;
+  }
+  summary::after {
+    content: ' Read more. . .';
+    color: var(--color-2);
+    font-family: "EncodeSans-SemiBold";
+    font-size: 14px;
+  }
+  details[open] summary:after {
+    content: " ";
+  }
+
+hr{
+    margin:16px 0 16px 0;
+    background-color: var(--color-15);
+    width: 100%;
+    border: none;
+    height: 1px;
+    grid-area: hr;
+}
+
+.color_size{
+    grid-area: selectors;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color_size div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+
+.color_size div p{
+    font-family: "EncodeSans-Bold";
+    font-size: 12px;
+    color: var(--color-2);
+}
+
+.color_size div ul{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    list-style: none;
+
+}
+
+.color_size div ul li{
+    display: flex;
+    font-family: "EncodeSans-Regular";
+    font-size: 12px;
+    color: var(--color-5);
+    line-height: 150%;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    border: 1px solid var(--color-4);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.color_size .size ul li:active{
+    background-color: var(--color-5);
+    color:var(--color-6) ;
+}
+
+.color_size .color ul li:nth-child(1){
+    background-color: #000000;
+}
+
+.color_size .color ul li:nth-child(2){
+    background-color: #ffffff;
+}
+
+.color_size .color ul li:nth-child(3){
+    background-color: #ff0000;
+}
+
+.color_size .color ul li:active{
+    border: 2px solid #00d9ff;
+}
+
+footer{
+    margin-top:24px ;
+    grid-area: footer;
+    padding: 18px 16px;
+    background-color: var(--color-5);
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 24px;
+}
+
+footer a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4px;
+    text-decoration: none;
+}
+
+footer a img{
+    object-fit: cover;
+    margin-right: 4px;
+}
+
+footer a p{
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-6);
+}
+
+footer a del{
+    font-family: "EncodeSans-Regular";
+    font-size: 10px;
+    line-height: 140%;
+    color: var(--color-6);
+}
+
+
