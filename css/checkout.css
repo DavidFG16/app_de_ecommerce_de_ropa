@@ -178,4 +178,57 @@ article > img{
     -webkit-appearance: none;
 }
 
+.shipping_info{
+    display: flex;
+    padding-top: 24px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.shipping_info > p{
+    font-family: "EncodeSans-SemiBold";
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-2);
+}
+
+.shipping_info .card_info{
+    display: flex;
+    padding: 16px 20px;
+    background-color:var(--color-14);
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.shipping_info .card_info > img{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.shipping_info .card_info .card_info__numbers{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.shipping_info .card_info .card_info__numbers img{
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.shipping_info .card_info .card_info__numbers p{
+    font-size: 14px;
+    color: var(--color-5);
+}
+
+.shipping_info .card_info .card_info__numbers p:nth-child(2) {
+    font-family: "EncodeSans-SemiBold";
+}
+
+.shipping_info .card_info .card_info__numbers p:nth-child(3) {
+    font-family: "EncodeSans-Regular";
+}
 
