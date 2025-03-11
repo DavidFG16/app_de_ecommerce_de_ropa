@@ -41,5 +41,141 @@ header p{
     line-height: 140%;
 }
 
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+main > hr{
+    margin: 24px 0 18px 0;
+}
+
+.purchase{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main section hr, main > hr{
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--color-15);
+}
+
+article > img{
+    width: 92.5px;
+    height: 70px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.purchase article{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+}
+
+.purchase article .purchase__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.purchase article .purchase__info .purchase_info_name_price{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.purchase article .purchase__info .purchase_info_name_price .purchase_info_name{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.purchase article .purchase__info .purchase_info_name_price .purchase_info_name p:first-child{
+    font-family: "EncodeSans-SemiBold";
+    font-size: 14px;
+    color: var(--color-2);
+    width: 135px;
+}
+
+.purchase article .purchase__info .purchase_info_name_price .purchase_info_name p:last-child{
+    font-family: "EncodeSans-Regular";
+    font-size: 10px;
+    color: var(--color-1);
+}
+
+.purchase article .purchase__info .purchase_info_name_price .purchase_info_price{
+    font-family: "EncodeSans-SemiBold";
+    font-size: 14px;
+    color: var(--color-5);
+}
+
+.purchase_info_quantity{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+    padding-top: 15px;
+}
+
+.purchase_info_quantity img{
+    margin-right: 4px;
+}
+
+.counter_quantity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.counter_quantity .minus, 
+.counter_quantity .plus{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid var(--color-4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.counter_quantity .minus::before{
+    position: absolute;
+    content: url(../storage/img/minus.png);
+    align-self: center;
+    width: 16px;
+    height: 16px;
+}
+
+.counter_quantity .plus::before{
+    position: absolute;
+    content: url(../storage/img/add.png);
+    align-self: center;
+    width: 16px;
+    height: 16px;
+}
+
+.counter_quantity input{
+    width: 31px;
+    outline: none;
+    text-align: center;
+    font-family: "EncodeSans-Bold";
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--color-5);
+    border: none;
+}
+
+.counter_quantity input::-webkit-outer-spin-button,
+.counter_quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 
