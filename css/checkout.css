@@ -7,7 +7,7 @@
 
 body{
     display: grid;
-    padding: 24px;
+    padding: 24px 24px 0 24px;
     grid-template-areas: "header" 
                          "main" 
                          "footer";
@@ -58,6 +58,11 @@ main > hr{
     gap: 24px;
 }
 
+.purchase article{
+    align-items: center;
+    justify-content: center;
+}
+
 main section hr, main > hr{
     width: 100%;
     border: none;
@@ -66,7 +71,7 @@ main section hr, main > hr{
 }
 
 article > img{
-    width: 92.5px;
+    width: 101.82px;
     height: 70px;
     border-radius: 14px;
     object-fit: cover;
@@ -102,7 +107,7 @@ article > img{
     font-family: "EncodeSans-SemiBold";
     font-size: 14px;
     color: var(--color-2);
-    width: 135px;
+    /* width: 135px; */
 }
 
 .purchase article .purchase__info .purchase_info_name_price .purchase_info_name p:last-child{
@@ -262,3 +267,23 @@ article > img{
 
 
 
+footer{
+    margin-top:44px ;
+    grid-area: footer;
+    padding: 20px 16px;
+    background-color: var(--color-5);
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
+
+footer a{
+    font-family: "EncodeSans-Bold";
+    line-height: 140%;
+    font-size: 14px;
+    color:var(--color-6);
+    text-decoration: none;
+}
